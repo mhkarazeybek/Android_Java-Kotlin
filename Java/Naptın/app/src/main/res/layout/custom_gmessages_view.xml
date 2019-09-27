@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtPersonName"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPersonMessages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintStart_toStartOf="@+id/txtPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txtPersonName" />
+
+    <TextView
+        android:id="@+id/txtPersonDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPersonMessages" />
+
+    <TextView
+        android:id="@+id/txtMyMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyMessages" />
+
+    <TextView
+        android:id="@+id/txtGDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyMessages" />
+</android.support.constraint.ConstraintLayout>

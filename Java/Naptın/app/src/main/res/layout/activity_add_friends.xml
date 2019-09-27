@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_bg"
+    tools:context=".AddFriendsActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/txtAddFriends"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint=" Naptın Kodu (abcd*0000)"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="@+id/lstAddFriend"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lstAddFriend"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtAddFriends" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancel"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:onClick="search"
+        android:src="@drawable/btnsearch"
+        app:layout_constraintStart_toEndOf="@+id/txtAddFriends"
+        app:layout_constraintTop_toTopOf="@+id/txtAddFriends" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GMessagesActivity">
+
+    <ListView
+        android:id="@+id/lstGMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txtSendMessages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSendMessages"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Bir Mesaj Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendMessages"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSendMessages"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="sendGMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sendmessage" />
+</android.support.constraint.ConstraintLayout>

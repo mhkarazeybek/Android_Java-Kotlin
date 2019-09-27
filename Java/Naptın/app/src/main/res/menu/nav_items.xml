@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_change_password"
+        android:icon="@drawable/change_password"
+        android:title="Şifre değiştir" />
+    <item
+        android:id="@+id/nav_block"
+        android:icon="@drawable/block_user"
+        android:title="Kişi Engelle" />
+    <item
+        android:id="@+id/nav_block_list"
+        android:icon="@drawable/blocked_list"
+        android:title="Eng'ler Listesi" />
+</menu>

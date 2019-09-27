@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3368ff</color>
+    <color name="colorPrimaryDark">#1544f3</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="navcolor">#ffffff</color>
+    <color name="color_chang_pass">#0bcbf1</color>
+    <color name="wz">#FF4C9C12</color>
+    <color name="x">#FF9C2E12</color>
+</resources>

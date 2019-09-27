@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mhkarazeybek.mywordbox.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/userView"
+        android:layout_width="150dp"
+        android:layout_height="163dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:contentDescription="@android:string/cut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="368dp"
+        android:layout_height="274dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ListView
+            android:id="@+id/detailsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errorWord"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Wrong answers"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/userView"
+        app:layout_constraintStart_toStartOf="@+id/userView"
+        app:layout_constraintTop_toBottomOf="@+id/userView" />
+
+</android.support.constraint.ConstraintLayout>

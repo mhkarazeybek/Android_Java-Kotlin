@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgBlockedPhoto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCancelBlock"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtBlockedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgBlockedPhoto"
+        app:layout_constraintTop_toTopOf="@+id/imgBlockedPhoto" />
+
+    <ImageView
+        android:id="@+id/imgCancelBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="engKaldir"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBlockedPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/engkaldir" />
+</android.support.constraint.ConstraintLayout>

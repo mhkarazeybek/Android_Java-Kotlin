@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/yeniMesaj" android:title="Yeni Mesaj"></item>
+    <item android:id="@+id/yeniGrup" android:title="Yeni Grup"></item>
+    <item android:id="@+id/ayarlar" android:title="Ayarlar">
+        <menu>
+            <item android:id="@+id/istekListesi" android:title="İstek listesi"></item>
+            <item android:id="@+id/profilAyarlari" android:title="Profil Ayarları"></item>
+            <item android:id="@+id/hesapAyarlari" android:title="Hesap Ayarları"></item>
+        </menu>
+    </item>
+    <item android:id="@+id/addFriend" android:title="Arkadaş Ekle"></item>
+    <item android:id="@+id/logOut" android:title="Oturumu Kapat"></item>
+</menu>
